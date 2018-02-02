@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="vendor/silverstripe/framework/tests/bootstrap.php" colors="true">
+
+	<testsuite name="Default">
+		<directory>vendor/silverstripe/blog/tests</directory>
+		<directory>vendor/silverstripe/widgets/tests</directory>
+		<directory>vendor/silverstripe/content-widget/tests</directory>
+		<directory>vendor/silverstripe/spamprotection/tests</directory>
+		<directory>vendor/silverstripe/akismet/tests</directory>
+		<directory>vendor/silverstripe/comments/tests</directory>
+		<directory>vendor/silverstripe/comment-notifications/tests</directory>
+		<directory>vendor/colymba/gridfield-bulk-editing-tools/tests</directory>
+	</testsuite>
+
+</phpunit>
