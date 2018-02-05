@@ -10,7 +10,7 @@ matrix:
   include:
     - php: 5.6
     - php: 7.0
-      env: POSTGRE=1
+      env: DB=PGSQL
     - php: 7.1
     - php: 7.2
 
@@ -21,7 +21,7 @@ before_script:
 
   # Install composer dependencies
   - composer validate
-  - if [[ $POSTGRE ]]; then composer require --no-update silverstripe/postgresql:2.0.x-dev; fi
+  - if [[ "$DB" == "PGSQL" ]]; then composer require --no-update silverstripe/postgresql:2.0.x-dev; fi
   - composer install --prefer-dist --no-interaction --no-progress --no-suggest --optimize-autoloader --verbose --profile
 
 script:
