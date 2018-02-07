@@ -1,0 +1,9 @@
+_ss_environment.php
+/assets
+/silverstripe-cache/
+/.env
+/vendor/
+/themes/simple/
+/resources/
+/public/resources/
+/gridfield-bulk-editing-tools
