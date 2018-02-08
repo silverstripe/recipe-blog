@@ -1,0 +1,16 @@
+{
+  "github-slug": "silverstripe/recipe-blog",
+  "child-stability-inherit": true,
+  "dependency-constraint": "exact",
+  "vendors": [
+    "silverstripe",
+    "colymba"
+  ],
+  "upgrade-only": [
+    "colymba/gridfield-bulk-editing-tools",
+    "silverstripe/recipe-cms"
+  ],
+  "exclude": [
+    "silverstripe/recipe-plugin"
+  ]
+}
