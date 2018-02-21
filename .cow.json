@@ -3,11 +3,9 @@
   "child-stability-inherit": true,
   "dependency-constraint": "exact",
   "vendors": [
-    "silverstripe",
-    "colymba"
+    "silverstripe"
   ],
   "upgrade-only": [
-    "colymba/gridfield-bulk-editing-tools",
     "silverstripe/recipe-cms"
   ],
   "exclude": [
