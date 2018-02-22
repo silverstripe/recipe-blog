@@ -6,7 +6,8 @@
     "silverstripe"
   ],
   "upgrade-only": [
-    "silverstripe/recipe-cms"
+    "silverstripe/recipe-cms",
+    "colymba/gridfield-bulk-editing-tools"
   ],
   "exclude": [
     "silverstripe/recipe-plugin"
