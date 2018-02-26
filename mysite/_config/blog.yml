@@ -1,23 +1,28 @@
 ---
 Name: mywidgetsconfig
 Only:
-  moduleexists: silverstripe/widgets
+  moduleexists:
+    - silverstripe/blog
+    - silverstripe/widgets
 ---
-# Disable if you do not use widgets on your site
+# Disable if you do not use widgets on your blog
 SilverStripe\Blog\Model\Blog:
   extensions:
     - SilverStripe\Widgets\Extensions\WidgetPageExtension
+
 SilverStripe\Blog\Model\BlogPost:
   extensions:
     - SilverStripe\Widgets\Extensions\WidgetPageExtension
 
 ---
-Name: mycommentsextension
+Name: myblogconfig
 Only:
-  moduleexists: silverstripe/comments
+  moduleexists:
+    - silverstripe/blog
+    - silverstripe/comments
 ---
-# Enable page comments on the site by default, including frontend moderation / approval
-SilverStripe\CMS\Model\SiteTree:
+# Enable page comments for blogs and blog posts on the site by default, including frontend moderation / approval
+SilverStripe\Blog\Model\Blog:
   extensions:
     - SilverStripe\Comments\Extensions\CommentsExtension
   comments:
@@ -30,16 +35,19 @@ SilverStripe\CMS\Model\SiteTree:
     nested_comments: true
     order_comments_by: '"Created" ASC'
 
----
-Name: myblogconfig
-Only:
-  moduleexists: silverstripe/blog
----
-# Customise the email notification template here
 SilverStripe\Blog\Model\BlogPost:
   default_notification_template: SilverStripe\CommentNotifications\BlogCommentEmail
+  extensions:
+    - SilverStripe\Comments\Extensions\CommentsExtension
   comments:
     enabled: true
+    frontend_moderation: true
+    require_moderation_nonmembers: true
+    require_moderation_cms: true
+    require_login: false
+    require_login_cms: true
+    nested_comments: true
+    order_comments_by: '"Created" ASC'
 
 ---
 Name: akismetconfig
@@ -57,8 +65,9 @@ SilverStripe\Akismet\AkismetSpamProtector:
 ---
 Name: mycommentspamprotection
 Only:
-  moduleexists: silverstripe/spamprotection
-  classexists: SilverStripe\Comments\Controllers\CommentingController
+  moduleexists:
+    - silverstripe/comments
+    - silverstripe/spamprotection
 ---
 # Enable spam protection for comments by default
 SilverStripe\Comments\Controllers\CommentingController:
