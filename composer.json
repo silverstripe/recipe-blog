@@ -20,7 +20,7 @@
         "phpunit/phpunit": "^5.7"
     },
     "extra": {
-        "project-files": ["mysite/*"]
+        "project-files": ["app/*"]
     },
     "config": {
         "process-timeout": 600
