@@ -22,6 +22,7 @@ before_script:
   # Install composer dependencies
   - composer validate
   - if [[ "$DB" == "PGSQL" ]]; then composer require --no-update silverstripe/postgresql:2.0.x-dev; fi
+  - composer require --no-update silverstripe/installer 4.2.x-dev
   - composer install --prefer-source --no-interaction --no-progress --no-suggest --optimize-autoloader --verbose --profile
 
   # Validate cow schema
