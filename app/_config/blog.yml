@@ -36,7 +36,7 @@ SilverStripe\Blog\Model\Blog:
     order_comments_by: '"Created" ASC'
 
 SilverStripe\Blog\Model\BlogPost:
-  default_notification_template: SilverStripe\CommentNotifications\BlogCommentEmail
+  default_notification_template: SilverStripe\CommentNotifications\CommentEmail
   extensions:
     - SilverStripe\Comments\Extensions\CommentsExtension
   comments:
