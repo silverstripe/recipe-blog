@@ -4,7 +4,7 @@ dist: trusty
 
 env:
   global:
-    - COMPOSER_ROOT_VERSION=1.x-dev
+    - COMPOSER_ROOT_VERSION=1.3.x-dev
 
 matrix:
   include:
@@ -13,6 +13,7 @@ matrix:
       env: DB=PGSQL
     - php: 7.1
     - php: 7.2
+    - php: 7.3
 
 before_script:
   # Init PHP & increase speed by removing xdebug
@@ -22,7 +23,7 @@ before_script:
   # Install composer dependencies
   - composer validate
   - if [[ "$DB" == "PGSQL" ]]; then composer require --no-update silverstripe/postgresql:2.1.x-dev; fi
-  - composer require --no-update silverstripe/installer 4.2.x-dev
+  - composer require --no-update silverstripe/installer 4.4.x-dev
   - composer install --prefer-source --no-interaction --no-progress --no-suggest --optimize-autoloader --verbose --profile
 
   # Validate cow schema
