@@ -1,39 +1,7 @@
-language: php
+version: ~> 1.0
 
-dist: xenial
-
-services:
-  - mysql
-  - postgresql
-
-env:
-  global:
-    - COMPOSER_ROOT_VERSION=1.x-dev
-
-matrix:
-  include:
-    - php: 7.1
-      env: DB=PGSQL
-    - php: 7.1
-    - php: 7.2
-    - php: 7.3
-    - php: 7.4
-
-before_script:
-  # Init PHP & increase speed by removing xdebug
-  - phpenv rehash
-  - phpenv config-rm xdebug.ini
-
-  # Install composer dependencies
-  - composer validate
-  - if [[ "$DB" == "PGSQL" ]]; then composer require --no-update silverstripe/postgresql:^2; fi
-  - composer require --no-update silverstripe/installer:^4
-  - composer require --no-update sminnee/phpunit-mock-objects:^3
-  - composer install --prefer-source --no-interaction --no-progress --no-suggest --optimize-autoloader --verbose --profile
-
-  # Validate cow schema
-  - composer global require silverstripe/cow ^2
-  - ~/.config/composer/vendor/bin/cow schema:validate
-
-script:
-  - vendor/bin/phpunit
+# Uses 'standard' intead of 'self' (despite this using silverstirpe/recipe-cms) so that the simple theme is installed
+# which is required for a few functional tests, otherwise the 'Welcome to Silverstripe' no theme fallback template
+# is shown which will break the tests
+import:
+  - silverstripe/silverstripe-travis-shared:config/provision/standard-jobs-range.yml
