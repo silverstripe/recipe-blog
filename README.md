@@ -1,5 +1,7 @@
 ## Overview
 
+[![Build Status](https://api.travis-ci.com/silverstripe/recipe-blog.svg?branch=1)](https://travis-ci.com/silverstripe/recipe-blog)
+
 Provides a quick baseline installation for a blog and some common supporting
 features.
 
