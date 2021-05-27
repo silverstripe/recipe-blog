@@ -1,7 +1,8 @@
 version: ~> 1.0
 
-# Uses 'standard' intead of 'self' (despite this using silverstirpe/recipe-cms) so that the simple theme is installed
-# which is required for a few functional tests, otherwise the 'Welcome to Silverstripe' no theme fallback template
-# is shown which will break the tests
 import:
-  - silverstripe/silverstripe-travis-shared:config/provision/standard-jobs-range.yml
+  - silverstripe/silverstripe-travis-shared:config/provision/self-jobs-range.yml
+
+env:
+  global:
+    - REQUIRE_INSTALLER="*"

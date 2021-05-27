@@ -6,7 +6,7 @@
     "require": {
         "php": ">=7.1.0",
         "silverstripe/recipe-plugin": "^1",
-        "silverstripe/recipe-cms": "^4",
+        "silverstripe/recipe-cms": "4.8.x-dev",
         "silverstripe/blog": "3.7.x-dev",
         "silverstripe/widgets": "2.1.x-dev",
         "silverstripe/content-widget": "2.2.x-dev",
