@@ -6,21 +6,23 @@
     "require": {
         "php": ">=7.1.0",
         "silverstripe/recipe-plugin": "^1",
-        "silverstripe/recipe-cms": "^4",
-        "silverstripe/blog": "3.x-dev",
-        "silverstripe/widgets": "2.x-dev",
-        "silverstripe/content-widget": "2.x-dev",
-        "silverstripe/spamprotection": "3.x-dev",
-        "silverstripe/akismet": "4.x-dev",
-        "silverstripe/comments": "3.x-dev",
-        "silverstripe/comment-notifications": "2.x-dev",
+        "silverstripe/recipe-cms": "4.8.0@stable",
+        "silverstripe/blog": "3.7.0@stable",
+        "silverstripe/widgets": "2.1.0@stable",
+        "silverstripe/content-widget": "2.2.0@stable",
+        "silverstripe/spamprotection": "3.1.0@stable",
+        "silverstripe/akismet": "4.1.0@stable",
+        "silverstripe/comments": "3.5.0@stable",
+        "silverstripe/comment-notifications": "2.1.0@stable",
         "colymba/gridfield-bulk-editing-tools": "^3.0@beta"
     },
     "require-dev": {
         "sminnee/phpunit": "^5.7"
     },
     "extra": {
-        "project-files": ["app/*"]
+        "project-files": [
+            "app/*"
+        ]
     },
     "config": {
         "process-timeout": 600
