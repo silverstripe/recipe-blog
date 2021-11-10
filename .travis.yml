@@ -7,4 +7,5 @@ import:
 # "Welcome to Silverstripe" no theme fallback template is shown which will break the tests
 env:
   global:
+    - REQUIRE_EXTRA="silverstripe/gridfieldqueuedexport:^2 symbiote/silverstripe-queuedjobs:^4"
     - REQUIRE_INSTALLER="*"
