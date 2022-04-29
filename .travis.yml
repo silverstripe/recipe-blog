@@ -8,4 +8,4 @@ import:
 env:
   global:
     - REQUIRE_EXTRA="silverstripe/gridfieldqueuedexport:^2 symbiote/silverstripe-queuedjobs:^4"
-    - REQUIRE_INSTALLER="*"
+    - REQUIRE_INSTALLER="4.x-dev"
