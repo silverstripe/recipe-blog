@@ -1,6 +1,6 @@
 ## Overview
 
-[![Build Status](https://api.travis-ci.com/silverstripe/recipe-blog.svg?branch=1)](https://travis-ci.com/silverstripe/recipe-blog)
+[![CI](https://github.com/silverstripe/recipe-blog/actions/workflows/ci.yml/badge.svg)](https://github.com/silverstripe/recipe-blog/actions/workflows/ci.yml)
 
 Provides a quick baseline installation for a blog and some common supporting
 features.
