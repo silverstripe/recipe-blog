@@ -21,6 +21,9 @@
         "silverstripe/gridfieldqueuedexport": "^2",
         "symbiote/silverstripe-queuedjobs": "^4.9"
     },
+    "conflict": {
+        "silverstripe/lumberjack": "<2.1.0"
+    },
     "extra": {
         "project-files": ["app/*"]
     },
