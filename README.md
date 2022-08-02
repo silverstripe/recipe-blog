@@ -1,6 +1,7 @@
 ## Overview
 
 [![CI](https://github.com/silverstripe/recipe-blog/actions/workflows/ci.yml/badge.svg)](https://github.com/silverstripe/recipe-blog/actions/workflows/ci.yml)
+[![Silverstripe supported module](https://img.shields.io/badge/silverstripe-supported-0071C4.svg)](https://www.silverstripe.org/software/addons/silverstripe-commercially-supported-module-list/)
 
 Provides a quick baseline installation for a blog and some common supporting
 features.
@@ -27,7 +28,7 @@ presence of:
 
 * [`silverstripe/widgets`](https://github.com/silverstripe/silverstripe-widgets): Add widgets
 * [`silverstripe/content-widget`](https://github.com/silverstripe/silverstripe-content-widget): Display HTML content in a widget
-* [`silverstrpe/spamprotection`](https://github.com/silverstripe/silverstripe-spamprotection): Add spam protection to SilverStripe forms
+* [`silverstrpe/spamprotection`](https://github.com/silverstripe/silverstripe-spamprotection): Add spam protection to Silverstripe forms
 * [`silverstripe/akismet`](https://github.com/silverstripe/silverstripe-akismet): Use Akismet to add a simple spam filter 
 * [`silverstripe/comments`](https://github.com/silverstripe/silverstripe-comments): Add commenting functionality for Pages and other DataObjects
 * [`silverstripe/comment-notifications`](https://github.com/silverstripe/comment-notifications): Add simple email notification functionality for when new visitor comments are posted
