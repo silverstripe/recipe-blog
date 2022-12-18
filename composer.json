@@ -4,22 +4,21 @@
     "description": "SilverStripe Blog Project Template",
     "license": "BSD-3-Clause",
     "require": {
-        "php": "^7.4 || ^8.0",
-        "silverstripe/recipe-plugin": "^1",
-        "silverstripe/recipe-cms": "^4",
-        "silverstripe/blog": "3.x-dev",
-        "silverstripe/widgets": "2.x-dev",
-        "silverstripe/content-widget": "2.x-dev",
-        "silverstripe/spamprotection": "3.x-dev",
-        "silverstripe/akismet": "4.x-dev",
-        "silverstripe/comments": "3.x-dev",
-        "silverstripe/comment-notifications": "2.x-dev",
-        "colymba/gridfield-bulk-editing-tools": "^3"
+        "php": "^8.1",
+        "silverstripe/recipe-plugin": "^2",
+        "silverstripe/recipe-cms": "^5",
+        "silverstripe/blog": "4.x-dev",
+        "silverstripe/widgets": "3.x-dev",
+        "silverstripe/content-widget": "3.x-dev",
+        "silverstripe/spamprotection": "4.x-dev",
+        "silverstripe/comments": "4.x-dev",
+        "silverstripe/comment-notifications": "3.x-dev",
+        "colymba/gridfield-bulk-editing-tools": "^4"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.5",
-        "silverstripe/gridfieldqueuedexport": "^2",
-        "symbiote/silverstripe-queuedjobs": "^4.9"
+        "silverstripe/gridfieldqueuedexport": "^3",
+        "symbiote/silverstripe-queuedjobs": "^5"
     },
     "conflict": {
         "silverstripe/lumberjack": "<2.1.0"
