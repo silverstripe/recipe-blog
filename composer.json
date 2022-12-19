@@ -6,14 +6,14 @@
     "require": {
         "php": "^7.4 || ^8.0",
         "silverstripe/recipe-plugin": "^1",
-        "silverstripe/recipe-cms": "4.12.x-dev",
-        "silverstripe/blog": "3.11.x-dev",
-        "silverstripe/widgets": "2.3.x-dev",
-        "silverstripe/content-widget": "2.4.x-dev",
-        "silverstripe/spamprotection": "3.3.x-dev",
-        "silverstripe/akismet": "4.4.x-dev",
-        "silverstripe/comments": "3.9.x-dev",
-        "silverstripe/comment-notifications": "2.3.x-dev",
+        "silverstripe/recipe-cms": "4.x-dev",
+        "silverstripe/blog": "3.x-dev",
+        "silverstripe/widgets": "2.x-dev",
+        "silverstripe/content-widget": "2.x-dev",
+        "silverstripe/spamprotection": "3.x-dev",
+        "silverstripe/akismet": "4.x-dev",
+        "silverstripe/comments": "3.x-dev",
+        "silverstripe/comment-notifications": "2.x-dev",
         "colymba/gridfield-bulk-editing-tools": "^3"
     },
     "require-dev": {
