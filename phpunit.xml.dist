@@ -7,7 +7,6 @@
 			<directory>vendor/silverstripe/widgets/tests</directory>
 			<directory>vendor/silverstripe/content-widget/tests</directory>
 			<directory>vendor/silverstripe/spamprotection/tests</directory>
-			<directory>vendor/silverstripe/akismet/tests</directory>
 			<directory>vendor/silverstripe/comments/tests</directory>
 			<directory>vendor/silverstripe/comment-notifications/tests</directory>
 		</testsuite>
