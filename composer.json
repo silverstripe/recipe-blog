@@ -6,7 +6,7 @@
     "require": {
         "php": "^8.1",
         "silverstripe/recipe-plugin": "^2",
-        "silverstripe/recipe-cms": "^5",
+        "silverstripe/recipe-cms": "5.x-dev",
         "silverstripe/blog": "4.x-dev",
         "silverstripe/widgets": "3.x-dev",
         "silverstripe/content-widget": "3.x-dev",
@@ -24,7 +24,9 @@
         "silverstripe/lumberjack": "<2.1.0"
     },
     "extra": {
-        "project-files": ["app/*"]
+        "project-files": [
+            "app/*"
+        ]
     },
     "config": {
         "process-timeout": 600
