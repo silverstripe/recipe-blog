@@ -6,17 +6,17 @@
 Provides a quick baseline installation for a blog and some common supporting
 features.
 
-## Getting started
+## Installation
 
 To start a new website with a blog installed;
 
-```
-composer create-project silverstripe/recipe-blog website ^1
+```sh
+composer create-project silverstripe/recipe-blog website
 ```
 
 Or to include a blog into your existing website:
 
-```
+```sh
 composer require silverstripe/recipe-blog
 ```
 
