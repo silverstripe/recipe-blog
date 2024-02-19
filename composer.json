@@ -6,18 +6,15 @@
     "require": {
         "php": "^8.1",
         "silverstripe/recipe-plugin": "2.x-dev",
-        "silverstripe/recipe-cms": "5.x-dev",
-        "silverstripe/blog": "4.x-dev",
-        "silverstripe/spamprotection": "4.x-dev",
-        "colymba/gridfield-bulk-editing-tools": "4.x-dev"
+        "silverstripe/recipe-cms": "6.x-dev",
+        "silverstripe/blog": "5.x-dev",
+        "silverstripe/spamprotection": "5.x-dev",
+        "colymba/gridfield-bulk-editing-tools": "5.x-dev"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.6",
-        "silverstripe/gridfieldqueuedexport": "^3",
-        "symbiote/silverstripe-queuedjobs": "^5"
-    },
-    "conflict": {
-        "silverstripe/lumberjack": "<2.1.0"
+        "silverstripe/gridfieldqueuedexport": "^4",
+        "symbiote/silverstripe-queuedjobs": "^6"
     },
     "extra": {
         "project-files": [
