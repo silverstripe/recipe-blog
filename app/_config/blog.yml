@@ -1,20 +1,4 @@
 ---
-Name: mywidgetsconfig
-Only:
-  moduleexists:
-    - silverstripe/blog
-    - silverstripe/widgets
----
-# Disable if you do not use widgets on your blog
-SilverStripe\Blog\Model\Blog:
-  extensions:
-    - SilverStripe\Widgets\Extensions\WidgetPageExtension
-
-SilverStripe\Blog\Model\BlogPost:
-  extensions:
-    - SilverStripe\Widgets\Extensions\WidgetPageExtension
-
----
 Name: myblogconfig
 Only:
   moduleexists:
