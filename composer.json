@@ -4,7 +4,7 @@
     "description": "SilverStripe Blog Project Template",
     "license": "BSD-3-Clause",
     "require": {
-        "php": "^8.1",
+        "php": "^8.3",
         "silverstripe/recipe-plugin": "2.x-dev",
         "silverstripe/recipe-cms": "6.x-dev",
         "silverstripe/blog": "5.x-dev",
