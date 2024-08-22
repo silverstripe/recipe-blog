@@ -26,8 +26,6 @@ This recipe includes `silverstripe/blog` and it's dependencies as one might
 expect, but also provides a set of optional functionality enabled by the
 presence of:
 
-* [`silverstripe/widgets`](https://github.com/silverstripe/silverstripe-widgets): Add widgets
-* [`silverstripe/content-widget`](https://github.com/silverstripe/silverstripe-content-widget): Display HTML content in a widget
 * [`silverstrpe/spamprotection`](https://github.com/silverstripe/silverstripe-spamprotection): Add spam protection to Silverstripe forms
 * [`silverstripe/akismet`](https://github.com/silverstripe/silverstripe-akismet): Use Akismet to add a simple spam filter 
 * [`silverstripe/comments`](https://github.com/silverstripe/silverstripe-comments): Add commenting functionality for Pages and other DataObjects
